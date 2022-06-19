@@ -9,10 +9,8 @@ export class MenuLoginComponent implements OnInit {
 
   @Input() name: any;
 
-  constructor() { 
-  }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

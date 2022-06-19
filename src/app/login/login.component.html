@@ -1,4 +1,4 @@
-<form action="" class="form-container" [formGroup]="usuarioLogin">
+<form class="form-container" [formGroup]="usuarioLogin" >
     
     <mat-form-field class="campos-field">
         <input matInput placeholder="Usuario" formControlName="usuario" #usuario>
@@ -6,7 +6,7 @@
     <div class="alert-error" *ngIf="usuarioLogin.get('usuario')?.touched && usuarioLogin.get('usuario')?.errors?.['required']">
         Este campo es requerido
     </div>
-    
+
     <mat-form-field class="campos-field">
         <input matInput placeholder="Password" formControlName="password" #contraseña>
     </mat-form-field>
