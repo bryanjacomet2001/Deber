@@ -1,13 +1,13 @@
 <p>
   <mat-toolbar class="nav-bar">
     <span>My Store</span>
-    <div class="container-options">
-      <a href="#">Mi aprendizaje</a>
-    </div>
-    <div class="container-buttons">
+    <div class="container-info-user">
       <span>{{usuario}}</span>
-      <button mat-flat-button color="primary">Cerrar sesión</button>
+      <div class="container-buttons">
+        <button mat-flat-button color="primary" (click)='exit()'>Cerrar sesión</button>
+      </div>
     </div>
+  
   </mat-toolbar>
 </p>
 

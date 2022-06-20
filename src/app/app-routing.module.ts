@@ -5,8 +5,8 @@ import { PaginaClienteComponent } from './pagina-cliente/pagina-cliente.componen
 
 const routes: Routes = [
   {path:'', component:PaginaInicialComponent},
-  {path:'pageInitial', component:PaginaInicialComponent},
-  {path:'usuario', component:PaginaClienteComponent}
+  {path:'home', component:PaginaInicialComponent},
+  {path:'usuario', component:PaginaClienteComponent},
 ];
 
 @NgModule({

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, FormGroupDirective, NgForm, } from '@angular/forms';
 import {Router} from '@angular/router';
-import { MatDialogRef } from '@angular/material/dialog';
-; 
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import { ErrorMsgComponent } from '../error-msg/error-msg.component';
   
 
 @Component({
@@ -12,7 +12,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>) {}
+  constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private dialog: MatDialog) {}
 
   //Datos quemados
   user="bryan";
@@ -30,9 +30,10 @@ export class LoginComponent implements OnInit {
     if(this.usuarioLogin.value.usuario === this.user && this.usuarioLogin.value.password === this.password){
       this.router.navigate(['/usuario'], {queryParams: {usuario: this.usuarioLogin.value.usuario}});
       this.dialogRef.close();
-    }else{
-      console.log("no inicio sesion");
     }
-   
+    else
+    {
+      this.dialog.open(ErrorMsgComponent);
+    }
   }
 }

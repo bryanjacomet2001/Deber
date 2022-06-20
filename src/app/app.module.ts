@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { PaginaClienteComponent } from './pagina-cliente/pagina-cliente.component';
 import { MenuLoginComponent } from './menu-login/menu-login.component';
+import { ErrorMsgComponent } from './error-msg/error-msg.component';
 
 
 
@@ -20,7 +21,8 @@ import { MenuLoginComponent } from './menu-login/menu-login.component';
     LoginComponent,
     PaginaInicialComponent,
     PaginaClienteComponent,
-    MenuLoginComponent
+    MenuLoginComponent,
+    ErrorMsgComponent
   ],
   imports: [
     BrowserModule,
