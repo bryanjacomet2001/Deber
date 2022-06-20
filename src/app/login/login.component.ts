@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   
   onSubmit(){
     console.log(this.usuarioLogin.value);
-    this.router.navigate(['/usuario']);
+    this.router.navigate(['/usuario'], {queryParams: {usuario: this.usuarioLogin.value.usuario}});
     this.dialogRef.close();
   }
 }

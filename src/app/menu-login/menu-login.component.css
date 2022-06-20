@@ -1,0 +1,10 @@
+.nav-bar{
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-buttons button:nth-child(2){    
+    margin-left: 20px;
+}

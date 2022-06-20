@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+
 
 @Component({
   selector: 'app-menu-login',
@@ -6,11 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./menu-login.component.css']
 })
 export class MenuLoginComponent implements OnInit {
+  
+  usuario!:string;
 
-  @Input() name: any;
+  constructor(private readonly route: ActivatedRoute) { }
 
-  constructor() { }
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+      this.route.queryParams.subscribe((params:Params) =>{
+      this.usuario = params['usuario'];
+    });
+  }
 
 }

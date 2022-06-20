@@ -9,7 +9,6 @@ export class PaginaClienteComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
