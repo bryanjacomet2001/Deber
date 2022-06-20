@@ -1,0 +1,34 @@
+.container-learn-tittle{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.container-learn-courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-learn-course{
+    border: 2px solid #e9edc9;
+    width: 420px;
+    height: 150px;
+    box-shadow: none;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.container-learn-course-info{
+    margin-left: 10px;
+}
+
+.container-learn-course-info p:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-learn-course-info:nth-child(2){
+    font-size: 17px;
+}
