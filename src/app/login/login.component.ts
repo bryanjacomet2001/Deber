@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private dialog: MatDialog) {}
 
   //Datos quemados
-  user="bryan";
+  user="root";
   password = "1234";
   
   usuarioLogin = new FormGroup({
