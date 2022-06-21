@@ -1,7 +1,27 @@
+.container-learn{
+    border: 2px solid #e9edc9;
+    width: 96%;
+    margin: 0px auto 20px auto;
+    border-radius: 5px;
+    padding: 10px 0px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .container-learn-tittle{
     font-size: 20px;
-    font-weight: bold;
-    padding-left: 12px;
+}
+
+.container-learn a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #0000ff;
+}
+
+.container-My-learning{
+    margin-right: 19px;
+    text-decoration: none;
 }
 
 .container-learn-courses{
@@ -16,12 +36,14 @@
     height: 150px;
     box-shadow: none;
     justify-content: space-around;
+    align-items: center;
     display: flex;
     margin-bottom: 15px;
 }
 
 .container-learn-course-info{
-    margin-left: 10px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .container-learn-course-info p:first-child{
@@ -31,4 +53,10 @@
 
 .container-learn-course-info:nth-child(2){
     font-size: 17px;
+}
+
+.container-learn-course img{
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
 }
